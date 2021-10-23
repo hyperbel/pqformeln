@@ -2,12 +2,25 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <title>pq Formel</title>
         <link rel="stylesheet" href="styles.css">
-        <script src="main.js"></script>
+        <script src="load-mathjax.js" async></script>
+        <script src="main.js" async></script>
+        
     </head>
     <body>
        <div class="main">
+           <div class="inputDiv">
 
+               <label for="formel">Hier die formel eingeben</label>
+               <input type="text" id="formel" name="formel"></input>
+               <button id="sbmit" onclick="subFormel(formel.value);">Los!</button>
+               <br/>
+            </div>
+            <div class="resultDiv">
+                <label id="resultTxt" name="resultTxt">hier soll das result stehen</label>
+                <p>$x_{1|2} = -\dfrac{p}{2}\pm\sqrt{(\dfrac{p}{2})² - q}$</p>
+            </div>
        </div> 
     </body>
 </html>
